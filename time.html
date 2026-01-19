@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+        h3 {
+            color: #666;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Current Time</h2>
+    <h3 id="time"></h3>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('time').textContent = timeString;
+        }
+
+        setInterval(updateTime, 1000);
+       
+       
+    </script>
+</body>
+</html>
